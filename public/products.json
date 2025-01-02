@@ -1,0 +1,47 @@
+[
+    {
+        "id" : 1,
+        "name": "Car Engine Plug",
+        "rating" : 5,
+        "price": 20.00,
+        "image" : "https://i.ibb.co.com/yfvx1np/1.png"
+    },
+    {
+        "id" : 2,
+        "name": "Car Air Filter",
+        "rating" : 5,
+        "price": 28.00,
+        "image": "https://i.ibb.co.com/hRZTZJB/2.png"
+        
+    },
+    {
+        "id" : 3,
+        "name": "Cools Led Light",
+        "rating" : 5,
+        "price": 11.32,
+        "image": "https://i.ibb.co.com/Db7rz06/3.png"
+    },
+    {
+        "id" : 4,
+        "name": "Cools LED Pump",
+        "rating" : 5,
+        "price": 31.21,
+        "image" : "https://i.ibb.co.com/bBMxCXW/4.png"
+    },
+    {
+        "id" : 5,
+        "name": "Air Born Tyres",
+        "rating" : 5,
+        "price": 15.00,
+        "image" : "https://i.ibb.co.com/s55fn84/5.png"
+    },
+    {
+        "id" : 6,
+        "name": "Car Battery",
+        "rating" : 5,
+        "price": 22.00,
+        "image" : "https://i.ibb.co.com/WsFPk9P/6.png"
+    }
+  
+
+]
