@@ -6,11 +6,25 @@ const Details = () => {
 
     const location = useLocation();
     const { data } = location.state || {};
+   
+    
 
     const {_id , title , price , img} = data;
-    console.log(_id);
+    const [...facility] = data.facility;
+    // const names =[];
+    // for (const item of facility){
+    //     names.push(item.name);
+    // }
+    // console.log(names);
+    console.log(facility);
+
+    
 
     const navigate = useNavigate();
+
+    const handleButton = nam =>{
+        navigate('/additionaldetail' , {state : {data:nam}});
+    }
 
     return (
         <div>
@@ -100,8 +114,9 @@ const Details = () => {
                     <div className='bg-gray-200 p-5 rounded-2xl'>
                         <h1 className='text-3xl text-gray-800 font-bold mb-6'>Services</h1>
                         {
-                            name.map(nam => <div key={nam} className='bg-white rounded-2xl mb-4  hover:bg-orange-600'>
-                                <h1 className='text-black font-bold hover:text-white p-3'>{nam}</h1>
+                            facility.map(nam => <div key={nam.name} className='bg-white rounded-2xl mb-4  hover:bg-orange-600'>
+                                <button onClick={()=>handleButton(nam)} className='hover:text-white w-full text-left'><h1 className='text-black font-bold hover:text-white p-3'>{nam.name}</h1></button>
+                                
 
                             </div>)
                         }

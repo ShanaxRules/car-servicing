@@ -7,6 +7,7 @@ import Checkout from "../pages/Checkout-comps/Checkout";
 import Bookings from "../pages/Bookings";
 import PrivateRoute from "./PrivateRoute";
 import Details from "../Details";
+import Addititional from "../pages/Addititional";
 
 const router = createBrowserRouter([
     {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
             {
                 path:'/details',
                 element:<Details></Details>
+            },
+            {
+                path:'/additionaldetail',
+                element: <Addititional></Addititional>
             }
         ]
     },
